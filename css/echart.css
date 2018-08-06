@@ -1,0 +1,326 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: Arial BoldMt;
+  background-color: #f1f1f1;
+  padding: 16px;
+}
+body .head {
+  height: 60px;
+  background-color: white;
+  padding: 15px 0;
+  display: flex;
+  flex-direction: row;
+}
+body .head .toDay,
+body .head .toMonth,
+body .head .monthEorro,
+body .head .newEorro {
+  flex: 1;
+  border-right: 1px solid #dddddd;
+}
+body .head .newEorro {
+  border: none;
+}
+body .head .toDay div {
+  float: left;
+}
+body .head .toDay div .deTop {
+  height: 25px;
+  line-height: 25px;
+  font-size: 14px;
+  color: #666;
+  font-family: MicrosoftYaHei;
+}
+body .head .toDay div .deBottom {
+  padding: 0;
+  font-size: 30px;
+  color: #666;
+}
+body .head .toDay div img {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  margin-left: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+body .head .toMonth #ciroEchart {
+  width: 70px;
+  height: 70px;
+  margin-left: 20px;
+}
+body .head .toMonth div {
+  float: left;
+}
+body .head .toMonth div .ciroTop {
+  height: 25px;
+  line-height: 25px;
+  font-size: 14px;
+  color: #666;
+  font-family: MicrosoftYaHei;
+}
+body .head .toMonth div .ciroBottom {
+  padding: 0;
+  font-size: 30px;
+  color: #666;
+}
+body .head .toMonth div img {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  margin-left: 30px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+body .head .monthEorro div {
+  float: left;
+}
+body .head .monthEorro div .eorrodeTop {
+  height: 25px;
+  line-height: 25px;
+  font-size: 14px;
+  color: #666;
+  font-family: MicrosoftYaHei;
+}
+body .head .monthEorro div .eorrodeBottom {
+  padding: 0;
+  font-size: 30px;
+  color: #666;
+}
+body .head .monthEorro div img {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  margin-left: 30px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+body .head .newEorro div {
+  float: left;
+  position: relative;
+}
+body .head .newEorro div .newTop {
+  height: 25px;
+  line-height: 25px;
+  font-size: 14px;
+  color: #666;
+  font-family: MicrosoftYaHei;
+}
+body .head .newEorro div .newBottom {
+  padding: 0;
+  font-size: 28px;
+  color: #666;
+}
+body .head .newEorro div .newBottom .down {
+  color: #ff9f03;
+  display: inline-block;
+  font-size: 16px;
+  position: absolute;
+  top: 35px;
+  left: 50px;
+}
+body .head .newEorro div .newBottom .down::before {
+  content: "";
+  position: absolute;
+  left: -12px;
+  top: 6px;
+  background: url('./../img/arrow-down.png') no-repeat;
+  width: 10px;
+  height: 10px;
+}
+body .head .newEorro div img {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  margin-left: 30px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+body .main {
+  margin-top: 16px;
+}
+body .main .top,
+body .main .middle,
+body .main .bottom {
+  display: flex;
+  height: 380px;
+}
+body .main .top {
+  position: relative;
+}
+body .main .top .topTiele {
+  position: absolute;
+  top: 70px;
+  z-index: 100;
+  width: 50%;
+  display: flex;
+}
+body .main .top .topTiele .middleBorder {
+  border-right: 1px solid #ddd;
+}
+body .main .top .topTiele > div {
+  flex: 1;
+  height: 44px;
+  font-size: 14px;
+  text-align: center;
+  color: #666666;
+}
+body .main .top .topTiele > div p {
+  font-size: 25px;
+}
+body .main .top .topL {
+  flex: 1;
+  margin-right: 16px;
+  background-color: white;
+  padding: 20px;
+}
+body .main .top .topR {
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+}
+body .main .middle {
+  margin-top: 16px;
+  position: relative;
+}
+body .main .middle .middleLTiele {
+  position: absolute;
+  top: 70px;
+  z-index: 100;
+  width: 50%;
+  display: flex;
+}
+body .main .middle .middleLTiele .middleBorder {
+  border-right: 1px solid #ddd;
+}
+body .main .middle .middleLTiele > div {
+  flex: 1;
+  height: 44px;
+  font-size: 14px;
+  text-align: center;
+  color: #666666;
+}
+body .main .middle .middleLTiele > div p {
+  font-size: 25px;
+}
+body .main .middle .middleL {
+  flex: 1;
+  margin-right: 16px;
+  background-color: white;
+  padding: 20px;
+}
+body .main .middle .middleR {
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+}
+body .main .middle .middleR .middleRtitle {
+  font-size: 18px;
+  color: #333333;
+}
+body .main .middle .middleR .yanshou {
+  display: flex;
+  text-align: center;
+  padding: 20px 0px 0px;
+}
+body .main .middle .middleR .yanshou .middleBorder {
+  border-right: 1px solid #ddd;
+}
+body .main .middle .middleR .yanshou > div {
+  flex: 1;
+  height: 44px;
+  font-size: 14px;
+  color: #666666;
+}
+body .main .middle .middleR .yanshou > div p {
+  font-size: 25px;
+}
+body .main .middle .middleR #middleR {
+  width: 100%;
+  height: 270px;
+}
+body .main .bottom {
+  margin-top: 16px;
+  position: relative;
+}
+body .main .bottom .bottomLTitle {
+  position: absolute;
+  top: 24px;
+  left: 136px;
+  display: inline-block;
+  margin-left: 5px;
+  border-left: 1px solid black;
+  color: #666;
+  font-size: 16px;
+  height: 16px;
+  line-height: 16px;
+  text-indent: 5px;
+  font-family: MicrosoftYaHei;
+}
+body .main .bottom .piacha {
+  position: absolute;
+  top: 0;
+  color: #666;
+  width: 12px;
+  top: 50%;
+  left: 47%;
+  font-size: 12px;
+  font-family: MicrosoftYaHei;
+}
+body .main .bottom .toggleNew {
+  position: absolute;
+  width: 128px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  border: 1px solid #ddd;
+  left: 37%;
+  top: 15px;
+  border-radius: 3px;
+  display: flex;
+}
+body .main .bottom .toggleNew span {
+  display: inline-block;
+  flex: 1;
+}
+body .main .bottom .toggleNew .active {
+  background-color: #577bcf;
+  color: white;
+}
+body .main .bottom .bottomL {
+  flex: 1;
+  margin-right: 16px;
+  background-color: white;
+  padding: 20px;
+}
+body .main .bottom .bottomR {
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+}
+body .main .bottom .bottomR .bottomRtitle {
+  font-size: 18px;
+  color: #333333;
+}
+body .main .bottom .bottomR .bottomRtitle .titleR {
+  display: inline-block;
+  margin-left: 5px;
+  border-left: 1px solid black;
+  color: #666;
+  font-size: 16px;
+  height: 16px;
+  line-height: 16px;
+  text-indent: 5px;
+  font-family: MicrosoftYaHei;
+}
+body .main .bottom .bottomR #bottomR {
+  width: 100%;
+  height: 300px;
+}

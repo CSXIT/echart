@@ -1,0 +1,343 @@
+   * {
+       padding: 0;
+       margin: 0;
+   }
+
+   body {
+       font-family: Arial BoldMt;
+       background-color: #f1f1f1;
+       padding: 16px;
+       .head {
+           height: 60px;
+           background-color: white;
+           padding: 15px 0;
+           display: flex;
+           flex-direction: row;
+           .toDay,
+           .toMonth,
+           .monthEorro,
+           .newEorro {
+               flex: 1;
+               border-right: 1px solid #dddddd;
+           }
+           .newEorro {
+               border: none;
+           }
+           .toDay {
+               div {
+                   float: left;
+                   .deTop {
+                       height: 25px;
+                       line-height: 25px;
+                       font-size: 14px;
+                       color: #666;
+                       font-family: MicrosoftYaHei;
+                   }
+                   .deBottom {
+                       padding: 0;
+                       font-size: 30px;
+                       color: #666;
+                   }
+               }
+               div {
+                   img {
+                       display: inline-block;
+                       width: 60px;
+                       height: 60px;
+                       line-height: 60px;
+                       margin-left: 20px;
+                       margin-right: 10px;
+                       vertical-align: middle;
+                   }
+               }
+           }
+           .toMonth {
+               #ciroEchart {
+                   width: 70px;
+                   height: 70px;
+                   margin-left: 20px;
+               }
+               div {
+                   float: left;
+                   .ciroTop {
+                       height: 25px;
+                       line-height: 25px;
+                       font-size: 14px;
+                       color: #666;
+                       font-family: MicrosoftYaHei;
+                   }
+                   .ciroBottom {
+                       padding: 0;
+                       font-size: 30px;
+                       color: #666;
+                   }
+               }
+               div {
+                   img {
+                       display: inline-block;
+                       width: 60px;
+                       height: 60px;
+                       line-height: 60px;
+                       margin-left: 30px;
+                       margin-right: 8px;
+                       vertical-align: middle;
+                   }
+               }
+           }
+           .monthEorro {
+               div {
+                   float: left;
+                   .eorrodeTop {
+                       height: 25px;
+                       line-height: 25px;
+                       font-size: 14px;
+                       color: #666;
+                       font-family: MicrosoftYaHei;
+                   }
+                   .eorrodeBottom {
+                       padding: 0;
+                       font-size: 30px;
+                       color: #666;
+                   }
+               }
+               div {
+                   img {
+                       display: inline-block;
+                       width: 60px;
+                       height: 60px;
+                       line-height: 60px;
+                       margin-left: 30px;
+                       margin-right: 8px;
+                       vertical-align: middle;
+                   }
+               }
+           }
+           .newEorro {
+               div {
+                   float: left;
+                   position: relative;
+                   .newTop {
+                       height: 25px;
+                       line-height: 25px;
+                       font-size: 14px;
+                       color: #666;
+                       font-family: MicrosoftYaHei;
+                   }
+                   .newBottom {
+                       padding: 0;
+                       font-size: 28px;
+                       color: #666;
+                       .down {
+                           color: #ff9f03;
+                           display: inline-block;
+                           font-size: 16px;
+                           position: absolute;
+                           top: 35px;
+                           left: 50px;
+                       }
+                       .down::before {
+                           content: "";
+                           position: absolute;
+                           left: -12px;
+                           top: 6px;
+                           background: url('./img/arrow-down.png') no-repeat;
+                           width: 10px;
+                           height: 10px;
+                       }
+                   }
+               }
+               div {
+                   img {
+                       display: inline-block;
+                       width: 60px;
+                       height: 60px;
+                       line-height: 60px;
+                       margin-left: 30px;
+                       margin-right: 8px;
+                       vertical-align: middle;
+                   }
+               }
+           }
+       }
+       .main {
+           margin-top: 16px;
+           .top,
+           .middle,
+           .bottom {
+               display: flex;
+               height: 380px;
+           }
+           .top {
+               position: relative;
+               .topTiele {
+                   position: absolute;
+                   top: 70px;
+                   z-index: 100;
+                   width: 50%;
+                   display: flex;
+                   .middleBorder {
+                       border-right: 1px solid #ddd;
+                   }
+                   >div {
+                       flex: 1;
+                       height: 44px;
+                       font-size: 14px;
+                       text-align: center;
+                       color: #666666;
+                       p {
+                           font-size: 25px;
+                       }
+                   }
+               }
+               .topL {
+                   flex: 1;
+                   margin-right: 16px;
+                   background-color: white;
+                   padding: 20px;
+               }
+               .topR {
+                   flex: 1;
+                   background-color: white;
+                   padding: 20px;
+               }
+           }
+           .middle {
+               margin-top: 16px;
+               position: relative;
+               .middleLTiele {
+                   position: absolute;
+                   top: 70px;
+                   z-index: 100;
+                   width: 50%;
+                   display: flex;
+                   .middleBorder {
+                       border-right: 1px solid #ddd;
+                   }
+                   >div {
+                       flex: 1;
+                       height: 44px;
+                       font-size: 14px;
+                       text-align: center;
+                       color: #666666;
+                       p {
+                           font-size: 25px;
+                       }
+                   }
+               }
+               .middleL {
+                   flex: 1;
+                   margin-right: 16px;
+                   background-color: white;
+                   padding: 20px;
+               }
+               .middleR {
+                   flex: 1;
+                   background-color: white;
+                   padding: 20px;
+                   .middleRtitle {
+                       font-size: 18px;
+                       color: #333333;
+                   }
+                   .yanshou {
+                       display: flex;
+                       text-align: center;
+                       padding: 20px 0px 0px;
+                       .middleBorder {
+                           border-right: 1px solid #ddd;
+                       }
+                       >div {
+                           flex: 1;
+                           height: 44px;
+                           font-size: 14px;
+                           color: #666666;
+                           p {
+                               font-size: 25px;
+                           }
+                       }
+                   }
+                   #middleR {
+                       width: 100%;
+                       height: 270px;
+                   }
+               }
+           }
+           .bottom {
+               margin-top: 16px;
+               position: relative;
+               .bottomLTitle {
+                   position: absolute;
+                   top: 24px;
+                   left: 136px;
+                   display: inline-block;
+                   margin-left: 5px;
+                   border-left: 1px solid black;
+                   color: #666;
+                   font-size: 16px;
+                   height: 16px;
+                   line-height: 16px;
+                   text-indent: 5px;
+                   font-family: MicrosoftYaHei;
+               }
+               .piacha {
+                   position: absolute;
+                   top: 0;
+                   color: #666;
+                   width: 12px;
+                   top: 50%;
+                   left: 47%;
+                   font-size: 12px;
+                   font-family: MicrosoftYaHei;
+               }
+               .toggleNew {
+                   position: absolute;
+                   width: 128px;
+                   height: 32px;
+                   line-height: 32px;
+                   text-align: center;
+                   border: 1px solid #ddd;
+                   left: 37%;
+                   top: 15px;
+                   border-radius: 3px;
+                   display: flex;
+                   span {
+                       display: inline-block;
+                       flex: 1;
+                   }
+                   .active {
+                       background-color: #577bcf;
+                       color: white;
+                   }
+               }
+               .bottomL {
+                   flex: 1;
+                   margin-right: 16px;
+                   background-color: white;
+                   padding: 20px;
+               }
+               .bottomR {
+                   flex: 1;
+                   background-color: white;
+                   padding: 20px;
+                   .bottomRtitle {
+                       font-size: 18px;
+                       color: #333333;
+                       .titleR {
+                           display: inline-block;
+                           margin-left: 5px;
+                           border-left: 1px solid black;
+                           color: #666;
+                           font-size: 16px;
+                           height: 16px;
+                           line-height: 16px;
+                           text-indent: 5px;
+                           font-family: MicrosoftYaHei;
+                       }
+                   }
+                   #bottomR {
+                       width: 100%;
+                       height: 300px;
+                   }
+               }
+           }
+       }
+   }

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/echart.css">
+</head>
+
+<body>
+    <div class="head">
+        <div class="toDay">
+            <div><img src="./img/ico_routing inspection.png" alt=""></div>
+            <div>
+                <p class="deTop">今日巡检总数</p>
+                <p class="deBottom">4,452</p>
+            </div>
+        </div>
+        <div class="toMonth">
+            <div id='ciroEchart'></div>
+            <div>
+                <p class="ciroTop">本月问题闭环数</p>
+                <p class="ciroBottom">2,335</p>
+            </div>
+        </div>
+        <div class="monthEorro">
+            <div><img src="./img/ico_problem-pending.png" alt=""></div>
+            <div>
+                <p class="eorrodeTop">本月待处理问题</p>
+                <p class="eorrodeBottom">120</p>
+            </div>
+        </div>
+        <div class="newEorro">
+            <div><img src="./img/ico_problem-new.png" alt=""></div>
+            <div>
+                <p class="newTop">本月新问题问题</p>
+                <p class="newBottom">29 <span class="down">7%</span></p>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="top">
+            <div class="topTiele">
+                <div class="middleBorder">
+                    <div>质量巡检总数</div>
+                    <p>356</p>
+                </div>
+                <div >
+                    <div>承包单位</div>
+                    <p>234</p>
+                </div>
+                <div>
+                    <div>监理单位</div>
+                    <p>56</p>
+                </div>
+                <div>
+                    <div>建设单位</div>
+                    <p>76</p>
+                </div>
+            </div>
+            <div class="topL" id="topL">
+            </div>
+            <div class="topR" id="topR">
+            </div>
+        </div>
+        <div class="middle">
+            <div class="middleLTiele">
+                <div>
+                    <div>近7天闭环总数</div>
+                    <p>348</p>
+                </div>
+                <div class="middleBorder">
+                    <div>近七天闭环率</div>
+                    <p>98.34%</p>
+                </div>
+                <div>
+                    <div>问题闭环总数</div>
+                    <p>4,334</p>
+                </div>
+                <div>
+                    <div>问题闭环率</div>
+                    <p>89.34%</p>
+                </div>
+            </div>
+            <div class="middleL" id="middleL">
+
+            </div>
+            <div class="middleR">
+                <div class="middleRtitle">工序验收情况</div>
+                <div class="yanshou">
+                    <div>
+                        <div>最近验收总量</div>
+                        <p>342</p>
+                    </div>
+                    <div class="middleBorder">
+                        <div>最近验收合格率</div>
+                        <p>98.34%</p>
+                    </div>
+                    <div>
+                        <div>验收总量</div>
+                        <p>2,334</p>
+                    </div>
+                    <div>
+                        <div>验收合格率</div>
+                        <p>98.34%</p>
+                    </div>
+
+                </div>
+                <div id="middleR"></div>
+            </div>
+        </div>
+        <div class="bottom">
+            <span class="bottomLTitle">轴线控制</span>
+            <span class="piacha">平面偏差</span>
+            <div class="toggleNew"><span class="active">近10环</span><span>最新环</span></div>
+            <div class="bottomL" id="bottomL">
+
+            </div>
+
+            <div class="bottomR">
+                <div class="bottomRtitle">盾构推进质量<span class="titleR">芯片变形椭圆度</span></div>
+                <div id="bottomR">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="./JS/jquery-3.3.1.min.js"></script>
+<script src="./JS/echarts.min.js"></script>
+<script src="./JS/myEchart.js"></script>
